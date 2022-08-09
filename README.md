@@ -72,3 +72,30 @@ Using the provided steps, everything should work as explained, if not, make sure
 In case you change your configuration, make sure to change your package.json file to run accordingly to avoid any kind of troubles or incompatibilities.
 
 Good luck!
+
+## Lodgify Automation QA test
+
+For test automation I used Page object model(POM), Cypress and Cucumber as BDD. 
+
+The project structure is:
+   ├── BUG_Reports                               # Bug report for Lodgify as png
+   ├── cypress
+         ├── fixtures                            # test data for tests  
+         ├── integration                         # Features file with tests and step-definitions for them         
+         ├── plugins  
+         ├── support                             # Page objects for Lodgify
+   ├── public      
+   ├── server
+      ├── .gitignore
+      ├── cypress.json
+      ├── package-lock.json
+      ├── package.json  
+      └── README.md
+
+For execution of tests use:
+```
+$ npm run cy:run
+```
+Tests can also will run from cypress dashboard. 
+
+P.S. I created a bug report only for one bug. 
